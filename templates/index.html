@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Login</title>
+</head>
+<body>
+    <h2>Face Login (Webcam)</h2>
+    <video id="video" width="320" height="240" autoplay></video>
+    <button id="snap">Verify Face</button>
+    <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+    <p id="result"></p>
+
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+</body>
+</html>
